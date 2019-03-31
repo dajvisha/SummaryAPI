@@ -1,21 +1,41 @@
-# Summary
-
-**TODO: Add description**
+# :fax: Summary API
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `summary` to your list of dependencies in `mix.exs`:
+Before to execute SummaryAPI fetch deps with the following command:
 
-```elixir
-def deps do
-  [
-    {:summary, "~> 0.1.0"}
-  ]
-end
+`mix deps.get`
+
+## Execute
+
+In order to execute SummaryAPI run the following command:
+
+`iex -S mix`
+
+And write:
+
+`Summary.start()`
+
+That command will fetch Users and Movements records to generate to report, and then it will send the report to the given endpoint. At the end it will display the logs like these:
+
+```
+The report has been sent correctly.
+
+Genereting and sending the report took: 9 seconds
+The number of requests made to users was: 7
+The number of requests made to movements was: 83
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/summary](https://hexdocs.pm/summary).
+## Run Tests
 
+In order to run tests, you must write the following command:
+
+`mix test`
+
+## Generate documention
+
+If you want to generate the documentation for SummaryAPI run the following command:
+
+`mix docs`
+
+It will generate a `doc/index.html` file, open it. 
