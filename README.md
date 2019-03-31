@@ -1,5 +1,9 @@
 # :fax: Summary API
 
+<img src="https://media1.giphy.com/media/iykGchLB7V6DK/giphy.gif"
+     alt="SummaryAPI"
+     style="float: left;" />
+
 ## Installation
 
 Before to execute SummaryAPI fetch deps with the following command:
